@@ -1,0 +1,463 @@
+/*
+文章列表
+*/
+.f-article-top {
+  width: 100%;
+  height: auto;
+  min-height: 28px;
+  margin-top: 15px;
+  p {
+    line-height: 28px;
+  }
+  > .pull-left + .pull-left {
+    margin-left: 10px;
+  }
+  .link-darker {
+    line-height: 28px;
+    margin-left: 5px;
+  }
+}
+
+.u-article-width01 {
+  width: 360px;
+  margin-right: 5px;
+  float: left;
+}
+
+.f-article-btns {
+  float: right;
+}
+
+.local-grid {
+  thead {
+    th.id {
+      width: 110px;
+    }
+    th.creatTime {
+      width: 150px;
+    }
+    th.sort {
+      width: 133px;
+    }
+    th.state {
+      width: 133px;
+    }
+    th.data {
+      width: 133px;
+      position: relative;
+      .icon-b-titletip {
+        position: absolute;
+        right: 14px;
+        top: 8px;
+      }
+    }
+    th.operate {
+      width: 124px;
+    }
+  }
+  tbody {
+    td:nth-of-type(2) {
+      a {
+        display: block;
+        width: 305px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .tooltip {
+    .tooltip-inner {
+      background-color: rgba(0, 0, 0, .71);
+      font-family: $font-family-base;
+      font-size: $font-size-base;
+      line-height: 20px;
+      padding: 5px 8px;
+    }
+    .tooltip-arrow {
+      border-left-color: rgba(0, 0, 0, .71);
+    }
+  }
+}
+
+.share-grid {
+  thead {
+    th:nth-of-type(1) {
+      width: 110px;
+    }
+    th:nth-of-type(3) {
+      width: 190px;
+    }
+    th:nth-of-type(4) {
+      width: 270px;
+    }
+    th:nth-of-type(5) {
+      width: 150px;
+    }
+    th:nth-of-type(6) {
+      width: 80px;
+    }
+  }
+  tbody {
+    td:nth-of-type(2) {
+      a {
+        display: block;
+        width: 265px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: $gray-white;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #f6f8fc;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th {
+  border: none;
+  vertical-align: middle;
+}
+
+.table > tbody > tr:hover {
+  background-color: #def2fd;
+}
+
+.u-sort {
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid $gray-light;
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px 5px;
+  color: $gray-dark;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.grid-hidden {
+  .u-sort {
+    color: $gray;
+  }
+}
+
+.u-article-link {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.u-article-dizhi {
+  width: 70px;
+  text-align: right;
+  float: left;
+}
+
+.u-article-url {
+  width: 480px;
+  float: left;
+  word-break: break-all;
+}
+
+.u-article-mt {
+  margin-top: 8px;
+}
+
+//资料下载
+.m-down-input {
+  float: left;
+  width: 345px;
+  margin-right: 10px;
+}
+
+.down-box {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 10px 60px;
+  border: 1px solid #ccc;
+  .m-crumbs {
+    padding-left: 0;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+.down-box-foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 48px;
+  width: 663px;
+  background-color: #f5f5f5;
+  .btn {
+    position: absolute;
+    bottom: 12px;
+    padding: 2px 20px;
+    font-size: 12px;
+  }
+  .btn-info {
+    right: 90px;
+  }
+  .btn-default {
+    right: 12px;
+  }
+}
+
+.down-ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+  li {
+    list-style: none;
+    width: 300px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    p.pull-left {
+      max-width: 275px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    i.icon-error {
+      cursor: pointer;
+    }
+  }
+}
+
+//滚动条
+.f_scroll {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.f_scroll_area {
+  width: 98%;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+
+.f_scroll_twig {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #cccccc;
+  border-radius: 5px;
+}
+
+.f_scroll_bar {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #959494;
+  border-radius: 5px;
+}
+
+.down-file-btn {
+  .links {
+    cursor: pointer;
+    margin-left: 8px;
+    color: #2295e2;
+    text-decoration: underline;
+  }
+}
+
+/* 文章管理 */
+.article-grid {
+  padding-bottom: 0;
+  height: 312px;
+  min-height: 312px;
+  tbody {
+    td {
+      font-size: 12px;
+      padding: 6px;
+    }
+    td:nth-of-type(1) {
+      width: 40px;
+      padding: 6px 6px 6px 10px;
+    }
+    td:nth-of-type(2) {
+      width: 80px;
+    }
+    td:nth-of-type(3) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 310px;
+    }
+    td:nth-of-type(4) {
+      width: 160px;
+    }
+    td:nth-of-type(5) {
+      text-align: left;
+      width: 70px;
+    }
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f6f8fc;
+  }
+  .table-striped > tbody > tr:nth-of-type(even) {
+    background-color: $gray-white;
+  }
+}
+
+.f-article-top > .pull-left + .pull-left {
+  margin-left: 10px;
+}
+
+.uploads-num {
+  width: 230px;
+  .pagination {
+    margin: 8px 0;
+  }
+}
+
+.datePicker {
+  position: relative;
+  width: 210px;
+  display: inline-block;
+}
+
+.datePicker .glyphicon {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border-left: 1px solid $gray-lighter;
+  text-align: center;
+  line-height: 28px;
+  color: $gray-dark;
+  &::before {
+    display: none;
+  }
+  background: url("../images/date-icon.png") no-repeat center;
+}
+
+.datePicker .form-control {
+  width: 100%;
+  float: left;
+  margin-right: 0;
+  padding-right: 30px;
+  color: $gray;
+  font-family: Arial;
+  background-color: $gray-white;
+}
+
+.m-form-package {
+  .btn-group-reset, .datePicker {
+    width: 230px;
+  }
+  .btn-group-reset .btn:first-of-type {
+    width: 100%;
+  }
+  .icheck-box + .pull-right {
+    line-height: 26px;
+  }
+}
+
+.preview-pic {
+  border: 1px solid #ccc;
+  padding: 12px;
+  .preview-pic-tip {
+    color: #666;
+    padding: 0 8px 8px;
+  }
+  .m-sort-drag {
+    .m-drag-item {
+      float: left;
+      position: relative;
+      width: 25%;
+      padding: 0 8px;
+      margin-bottom: 8px;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+/**
+   移动栏目文章弹框
+ */
+
+.btn-group-reset .g-limit-with {
+
+  max-height: 160px;
+
+  > li > a {
+    width: 354px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.f-column-edit-limit-height {
+  max-height: 220px;
+  overflow-y: hidden;
+  min-height: 220px;
+  position: relative;
+}
+
+.footer-error {
+  div {
+
+    &:nth-child(1) {
+      width: 45%;
+      text-align: left;
+      margin-left: 15px;
+      color: $error;
+      float: left;
+      font-size: 14px;
+    }
+    &:nth-child(2) {
+      width: 52%;
+      text-align: right;
+      float: right;
+    }
+  }
+
+}
+
+.t-top {
+  top: auto;
+  bottom: 30px;
+}
+
+.g-title-ellipsis {
+  max-width: 260px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.articleInfo {
+  padding: 10px 20px;
+}

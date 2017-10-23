@@ -1,0 +1,330 @@
+
+.icon-doc{
+  @extend %icons;background-position: -20px -140px;
+}
+.icon-visible{
+  @extend %gridicons;background-position:0px -710px;
+  &.icon-on{
+    background-position:-20px -710px;
+  }
+  &.icon-off{
+    background-position:0px -710px;
+  }
+}
+.icon-puttop{
+  @extend %gridicons;background-position:0 -730px;
+  &.icon-on{
+    background-position:-20px -730px;
+  }
+  &.icon-off{
+    background-position:0px -730px;
+  }
+}
+.icon-recommend{
+  @extend %gridicons;background-position:0 -750px;
+  &.icon-on{
+    background-position:-20px -750px;
+  }
+  &.icon-off{
+    background-position:0px -750px;
+  }
+}
+.icon-share,.icon-unshare{
+  @extend %gridicons;background-position:0 -1050px;
+  &:hover{
+    background-position: -20px -1050px;
+  }
+}
+.icon-share-state{
+  @extend %gridicons;
+  &.icon-on{
+    background-position:-20px -770px;
+  }
+  &.icon-off{
+    background-position:0px -770px;
+  }
+  &.icon-encrypt {
+    background-position:-40px -770px;
+  }
+}
+.icon-setting{
+  @extend %gridicons;background-position:0 -970px;
+  &:hover{
+    background-position:-20px -970px;
+  }
+}
+.icon-link{
+  @extend %gridicons;background-position:0 -810px;
+  &:hover{
+    background-position:-20px -810px;
+  }
+}
+.icon-copy{
+  @extend %gridicons;background-position:0 -910px;
+  &:hover{
+    background-position:-20px -910px;
+  }
+}
+.icon-share-del{
+  @extend %gridicons;background-position:0 -930px;
+  &:hover{
+    background-position:-20px -930px;
+  }
+}
+.icon-preview{
+  @extend %gridicons;background-position:0 -830px;
+  &:hover{
+    background-position:-20px -830px;
+  }
+}
+.icon-delete{
+  @extend %gridicons;background-position:0 -850px;
+  &:hover{
+    background-position:-20px -850px;
+  }
+  &.disabled{
+    background-position: -40px -850px;
+  }
+}
+.icon-editor{
+  @extend %gridicons;background-position:0 -870px;
+  &:hover{
+    background-position:-20px -870px;
+  }
+  &.disabled{
+    background-position: -40px -870px;
+  }
+}
+.icon-sendnow{
+  @extend %gridicons;background-position:0 -1800px;
+  &:hover{
+    background-position:-20px -1800px;
+  }
+  &.disabled{
+    background-position:0 -1800px !important; cursor: not-allowed;
+  }
+}
+.icon-cancelsend{
+  @extend %gridicons;background-position:0 -1820px;
+  &:hover{
+    background-position:-20px -1820px;
+  }
+  &.disabled{
+    background-position:0 -1820px !important;cursor: not-allowed;
+  }
+}
+.icon-viewdata{
+  @extend %gridicons;background-position:0 -890px;
+  &:hover{
+    background-position:-20px -890px;
+  }
+}
+.icon-guanli{
+  @extend %gridicons;background-position:0 -950px;
+  &:hover{
+    background-position:-20px -950px;
+  }
+}
+.icon-chart{
+  @extend %icons;background-position: -40px -120px;vertical-align: text-bottom;
+}
+.icon-chart.disabled{
+  @extend %icons;background-position: -20px -120px;cursor: no-drop;vertical-align: text-bottom;
+}
+
+.u-setting-a{
+  @extend %icons;
+}
+.icon-textuser-n{
+  @extend %gridicons;background-position:0 -1010px;
+  &:hover{
+    background-position:-20px -1010px;
+  }
+}
+.icon-textuser-y{
+  @extend %gridicons;background-position:0 -990px;
+  &:hover{
+    background-position:-20px -990px;
+  }
+}
+
+
+.icon-date-null{
+  @include icons(40px,45px);background-position: 0 -1070px;
+}
+
+.icon-th{
+  @extend %gridicons;background-position: -20px -160px;
+  .active > &{
+    background-position: -20px -180px;
+  }
+}
+.icon-list{
+  @extend %gridicons;background-position: -40px -160px;
+  .active > &{
+    background-position: -40px -180px;
+  }
+}
+
+.icon-fenxiang{
+  @extend %gridicons;background-position:0px -1120px;
+  &.icon-on{
+    background-position:-20px -1120px;
+  }
+}
+
+.icon-down{
+  @extend %gridicons;background-position:0px -1140px;
+  &:hover{
+    background-position:-20px -1140px;
+  }
+}
+.icon-huifu{
+  @extend %gridicons;background-position:0px -1160px;
+  &:hover{
+    background-position:-20px -1160px;
+  }
+}
+.icon-guoqi{
+  font-size:12px;color:$gray;
+}
+.icon-save{
+  @extend %gridicons;background-position:0px -1180px;
+  &:hover{
+    background-position:-20px -1180px;
+  }
+}
+.icon-yinpin{
+  @extend %gridicons;background-position:-20px -220px;
+}
+.icon-login-email{
+  @extend %gridicons;background-position: 0 -280px;
+}
+.icon-login-pwd{
+  @extend %gridicons;background-position: 0 -300px;
+}
+.icon-error{
+  @extend %gridicons;background-position: 0 -320px;
+}
+.icon-fans{
+  @include icons(40px,40px);background-position: -20px -240px;
+}
+.icon-follow{
+  @include icons(40px,40px);background-position: -20px -280px;
+}
+.icon-unfollow{
+  @include icons(40px,40px);background-position: -20px -320px;
+}
+.icon-dollar{
+  @include icons(40px,40px);background-position: -20px -360px;
+}
+.icon-add-welt{
+  @extend %gridicons;background-position: 4px -17px;
+}
+.icon-upload{
+  @extend %gridicons;background-position: 0 -360px;
+}
+.icon-download{
+  @extend %gridicons;background-position: 3px -338px;
+  &:hover{
+    background-position: 3px -378px;
+  }
+}
+.icon-file-word{
+  @extend %iconsmr3;background-position: 0 -1250px;
+}
+.icon-file-ppt{
+  @extend %iconsmr3;background-position: -20px -1250px;
+}
+.icon-file-picture{
+  @extend %iconsmr3;background-position: 0 -1270px;
+}
+.icon-file-rar{
+  @extend %iconsmr3;background-position: -20px -1270px;
+}
+.icon-file-excel{
+  @extend %iconsmr3;background-position: 0 -1290px;
+}
+.icon-file-text{
+  @extend %iconsmr3;background-position: -20px -1290px;
+}
+.icon-file-video{
+  @extend %iconsmr3;background-position: 0 -1310px;
+}
+.icon-file-pdf{
+  @extend %iconsmr3;background-position: -20px -1310px;
+}
+.icon-file-folder{
+  @extend %iconsmr3;background-position: 0 -1330px;
+}
+.icon-file-music{
+  @extend %iconsmr3;background-position: -20px -1330px;
+}
+.icon-file-unknown{
+  @extend %iconsmr3;background-position: -40px -1290px;
+}
+.icon-batch-download{
+  @extend %iconsmr3;background-position: 0 -1350px;
+  a:hover &{
+    background-position: -20px -1350px;
+  }
+  .disabled &,.disabled:hover &{
+    background-position: -40px -1350px;text-decoration: none;
+  }
+}
+.icon-batch-share{
+  @extend %iconsmr3;background-position: 0 -1370px;
+  a:hover &{
+    background-position: -20px -1370px;
+  }
+  .disabled &,.disabled:hover &{
+    background-position: -40px -1370px;text-decoration: none
+  }
+}
+.icon-batch-unshare{
+  @extend %iconsmr3;background-position: 0 -1390px;
+  a:hover &{
+    background-position: -20px -1390px;
+  }
+  .disabled &,.disabled:hover &{
+    background-position: -40px -1390px;text-decoration: none
+  }
+}
+.icon-batch-copy{
+  @extend %iconsmr3;background-position: 0 -1970px;
+  a:hover &{
+    background-position: -20px -1970px;
+  }
+  .disabled &,.disabled:hover &{
+    background-position: -40px -1970px;text-decoration: none
+  }
+}
+.disabled{
+  color:#ccc !important;cursor:not-allowed;
+}
+
+.icon-addtag{
+  @extend %gridicons;
+  background-position: 0 -1910px;
+  &:hover{
+    background-position: -20px -1910px;
+  }
+}
+
+.icon-o-up.disabled, .icon-o-down.disabled {
+  background: url(../images/icon-disabled.png);
+}
+
+.icon-o-up.disabled {
+  background-position: 0 -20px;
+  &:hover {
+    background-position: 0 -20px;
+  }
+}
+
+.icon-o-down.disabled {
+  background-position: 0 0;
+  &:hover {
+    background-position: 0 0;
+  }
+}

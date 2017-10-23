@@ -1,0 +1,73 @@
+//modal 宽度
+.modal-sm{
+  width: 550px;
+}
+.modal-smd{
+  width: 610px;
+}
+.modal-md{
+  width: 680px;
+}
+.modal-lg{
+  width: 830px;
+}
+.modal-dialog{ margin:180px auto;}
+.modal-open .modal{ overflow-y: hidden;}
+/*
+弹窗样式重置
+*/
+.modal-header-reset{
+  height:38px;
+  padding:0 20px;
+  background-color:$brand-info;
+  border-radius:5px 5px 0 0;
+  border-bottom:0px;
+
+  .close{
+    margin-top:10px;
+    width: 17px;height: 17px;background:url("../images/icon-o-close.png") no-repeat;
+    opacity:1;
+    font-weight:normal;
+    span{
+      display: none;
+    }
+  }
+
+  & .modal-title{
+    font-size:$font-size-base;color:#ffffff;line-height:38px;
+  }
+}
+.modal-footer-reset{
+  height:48px;
+  padding:10px 20px;
+  background-color:$bg-color-bootstrap;
+  border-radius:0 0 5px 5px;
+  border-top:0px;
+}
+.modal-body-reset{
+  padding:20px;
+}
+.modal-alert{
+  width:100%;height:auto;font-size:14px;color:$gray-darker;word-break: break-all;
+}
+
+// alert 弹窗
+.m-alert{
+  font-size: $font-size-middle;width: 75%;margin-left:auto;margin-right:auto;margin-top:15px;margin-bottom:15px;position: relative;min-height: 45px;overflow: hidden;
+  .alert-icon{
+    float:left;width: 15%;
+  }
+  .alert-txt{
+    float:left;display:inline-block;line-height: 45px;width: 85%;
+  }
+}
+.multiple-alert{
+
+  .alert-txt{
+    line-height: 22px;
+  }
+}
+
+.modal-open{
+  padding-right: 0 !important;
+}

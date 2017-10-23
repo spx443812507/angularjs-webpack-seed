@@ -1,0 +1,33 @@
+//按钮组件
+
+//默认
+.r-btn-default{
+  color:$btn-info-color; background-color: $r-btn-default-bg; border:$r-btn-default-border;
+  &:hover,&.focus,&:focus,&.active,&:active,&.active.focus,&.active:focus,&:active.focus,&:active:focus{
+    background-color: $r-btn-default-hover-bg;color:$btn-info-color;
+  }
+}
+//红色按钮
+.btn-red{
+  background-color: #fa9587;padding:4px 72px;height:27px; text-align: center;
+  &:hover,&.focus,&:focus,&.active,&:active,&.active.focus,&.active:focus,&:active.focus,&:active:focus{
+    background-color: #f07868;
+  }
+}
+
+//蓝绿色中按钮
+.btn-md{ padding:4px 33px;}
+
+//蓝绿色大按钮
+.btn-lg{ padding:7px 39px; font-size: $font-size-middle; height:34px; border-radius:4px;}
+
+//弹窗内按钮
+.btn-modal{
+  background-color: #009caf; padding:4px 30px;
+  &:hover,&.focus,&:focus,&.active,&:active,&.active.focus,&.active:focus,&:active.focus,&:active:focus{
+    background-color: #008296;
+  }
+}
+
+
+.btn + .btn{ margin-left:4px;}

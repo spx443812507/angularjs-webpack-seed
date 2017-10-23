@@ -1,0 +1,26 @@
+//面包屑
+.r-breadcrumb {
+  @extend %clearfix;
+  width: 100%; font-size: 13px; padding-bottom: 7px;
+  span {
+    color: $gray-dark; float: left;
+  }
+  ul {
+    width: 100%;
+    li {
+      float: left;
+      a {
+        color: $gray-darker;
+        &:hover {
+          color: $brand-primary; text-decoration: underline;
+        }
+      }
+      + li:before {
+        content: ''; display: block; width: 13px; height: 13px; background: url("../images/icon/separation-line.png") no-repeat; float: left; margin-top: 3px;
+      }
+    }
+  }
+  .r-breadcrumb-back {
+    display: inline-block; margin-left: 20px; color: $brand-primary-darker;
+  }
+}

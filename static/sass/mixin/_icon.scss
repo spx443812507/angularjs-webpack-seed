@@ -1,0 +1,26 @@
+// icons
+//
+// --------------------------------------------------
+@mixin icons($width:14px,$height:16px,$margin-right:0,$margin-left:0){
+  display: inline-block;width:$width;height:$height;background: url("../images/icons.png") no-repeat;vertical-align: middle;margin-right: $margin-right;margin-left: $margin-left;
+  &:focus{
+    outline: none !important;
+  }
+}
+
+%icons{
+  @include icons;
+}
+%gridicons{
+  @include icons(20px,20px);
+  .pull-right > &,.pull-left > &{
+    margin-top: -3px;
+  }
+}
+
+%iconsmr5{
+  @include icons(20px,20px,5px,0);
+}
+%iconsmr3{
+  @include icons(20px,20px,3px,0);
+}

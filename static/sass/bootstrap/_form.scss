@@ -1,0 +1,193 @@
+/* 弹框 */
+.form-edit {
+  padding: 10px 68px;
+  max-height: 460px;
+  overflow: hidden;
+  .form-group .control-label {
+    padding: 0;
+    line-height: 28px;
+  }
+}
+
+textarea.form-control {
+  resize: none;
+  line-height: 26px;
+}
+
+/* 下拉菜单 */
+.btn-group-reset {
+  position: relative;
+  padding-right: 25px;
+  .btn {
+    height: 28px;
+    line-height: 18px;
+    border-radius: 0px;
+    &:hover, &:focus {
+      background-color: #fff;
+    }
+  }
+  .btn:first-of-type {
+    padding: 4px 8px;
+    text-align: left;
+    overflow: hidden;
+  }
+  .btn:last-of-type {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &.disabled {
+    .btn {
+      background-color: $bg-color-light;
+      color: $gray-light;
+      border-color: $gray-lighter;
+    }
+  }
+  .dropdown-menu > li {
+    cursor: pointer;
+    > a {
+      padding: 3px 12px;
+    }
+  }
+  &.open {
+    .btn, .dropdown-menu {
+      border-color: $brand-primary;
+      box-shadow: 0 0 8px $brand-primary-lighter;
+    }
+  }
+  .dropdown-menu {
+    border-radius: 0px;
+    min-width: 100%;
+    max-height: 220px;
+    overflow: auto;
+    > li {
+      > a {
+        width: 100%;
+      }
+    }
+    &.w100 {
+      width: 100%;
+      > li {
+        > a {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+}
+
+.dropdown-lg {
+  width: 100%;
+  .btn:first-of-type {
+    width: 100%;
+  }
+}
+
+.dropdown-big {
+  width: 254px;
+  .btn:first-of-type {
+    width: 229px;
+  }
+}
+
+.dropdown-md {
+  width: 225px;
+  .btn:first-of-type {
+    width: 200px;
+  }
+}
+
+.dropdown-sm {
+  width: 123px;
+  .btn:first-of-type {
+    width: 98px;
+  }
+}
+
+.dropdown-smr {
+  width: 100px;
+  .btn:first-of-type {
+    width: 75px;
+  }
+}
+
+.dropdown-more-sm {
+  width: 78px;
+  .dropdown-menu {
+    font-size: 13px;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .btn {
+    height: 24px; line-height: 14px;
+    &:first-of-type {
+      width: 53px; text-align: center;
+    }
+    &:last-of-type {
+      line-height: 0;
+    }
+  }
+  .btn-sm {
+    font-size: 13px;
+  }
+}
+
+.btn-group-reset {
+  .dropdown-menu.scroll {
+    max-height: 274px;
+    overflow-y: scroll;
+  }
+}
+
+.dropdown-menu.scroll {
+  max-height: 274px;
+  overflow-y: scroll;
+}
+
+/* 表单字数限制 */
+.m-form-limit {
+  position: relative;
+  input.form-control {
+    padding-right: 45px;
+  }
+}
+
+.u-limit-num {
+  color: $gray;
+  position: absolute;
+  bottom: 0;
+  right: 6px;
+  line-height: $control-height;
+}
+
+//水平表单
+.form-horizontal .form-group {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* radio input */
+
+f-column-edit ,.form-radio-dialog {
+  & > div {
+
+    padding-top: 5px;
+    .radio-label {
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 200;
+      font-size: 12px;
+    }
+    input {
+      width:15px;
+      display: inline-block;
+      margin-right: 2px;
+
+    }
+
+  }
+}

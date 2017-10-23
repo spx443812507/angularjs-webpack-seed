@@ -1,0 +1,76 @@
+.panel-statistics {
+  padding: 14px 0 10px;
+  @extend %clearfix;
+  .item-statistics {
+    float: left;
+    background-color: #e6f0f1;
+    padding: 10px;
+    margin-left: 13px;
+    width: 205px;
+    position: relative;
+    &:first-of-type {
+      margin-left: 0;
+      .total span {
+        color: #a568b0;
+      }
+    }
+    &:nth-of-type(2) .total span {
+      color: #dd9b0f;
+    }
+    &:nth-of-type(3) .total span {
+      color: #ff7a01;
+    }
+    &:nth-of-type(4) .total span {
+      color: #366bd8;
+    }
+    .total.unused span {
+      color: #999;
+    }
+    .total {
+      font-size: 16px;
+      line-height: 28px;
+      width: 125px;
+      padding-left: 6px;
+      span {
+        font-size: 30px;
+        line-height: 70px;
+        display: block;
+      }
+    }
+    .total-detail {
+      position: absolute;
+      left: 135px;
+      top: 35px;
+      li {
+        line-height: 26px;
+        font-size: 14px;
+        color: #666;
+        span {
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+.head-statistics {
+  padding: 6px 0 2px;
+  .title {
+    line-height: 28px;
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+.dataStatistics-grid {
+  > .table {
+    > thead {
+      .createTime {
+        width: 190px;
+      }
+    }
+    .WXheadImg {
+      height: 50px;
+    }
+  }
+}

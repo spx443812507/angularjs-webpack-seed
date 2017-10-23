@@ -2,16 +2,25 @@
  * Created by siler on 2017/9/18.
  */
 export default class ArticleListController {
-  constructor (articleService) {
+  constructor ($scope, articleService) {
     this.articleService = articleService
     this.articles = []
+    this.article = {
+      title: ''
+    }
 
-    this.init()
+    $scope.$watch(() => this.articles, articles => {
+      console.log(articles)
+    })
   }
 
-  init () {
-    this.articles = this.articleService.getArticleList()
+  loadArticleCategoryList () {
+    this.articleService.getArticleList().then((response) => {
+      this.articles = response.data.data
+    }, (response) => {
+
+    })
   }
 }
 
-ArticleListController.$inject = ['articleService']
+ArticleListController.$inject = ['$scope', 'articleService']

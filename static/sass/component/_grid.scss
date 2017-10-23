@@ -1,0 +1,217 @@
+/*
+  文章列表重置
+*/
+//带图标的绿色按钮
+.icon-button {
+  display: inline-block;
+  padding: 4px 14px;
+  background-color: $brand-info;
+  border-radius: $border-radius-base;
+  border: 0px;
+  font-size: 14px;
+  color: $gray-white;
+  outline: none;
+  & span {
+    color: $gray-white;
+  }
+  & span:nth-of-type(1) {
+    top: 2px;
+  }
+}
+
+%grid-width-san {
+  & thead th:nth-last-of-type(1) {
+    width: 255px;
+  }
+  & thead th:nth-last-of-type(2) {
+    width: 150px;
+  }
+  & thead th:nth-last-of-type(3) {
+    width: 190px;
+  }
+}
+
+%grid-width-santd {
+  & tr td:nth-last-of-type(1) {
+    width: 255px;
+  }
+  & tr td:nth-last-of-type(2) {
+    width: 150px;
+    a {
+      margin: 0 5px;
+    }
+  }
+  & tr td:nth-last-of-type(3) {
+    width: 190px;
+  }
+}
+
+.m-grid {
+  @extend %grid;
+  font-family: $font-family-base;
+  font-size: 14px;
+  color: $gray-darker;
+  tbody tr.grid-hidden {
+    color: $gray;
+    a {
+      color: $gray;
+    }
+  }
+  thead th {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  tbody th {
+    font-weight: normal;
+    font-size: 14px;
+    color: $gray-darker;
+  }
+  tbody td {
+    text-align: center;
+    font-size: 14px;
+    &.time {
+      font-size: 12px;
+      color: $gray;
+    }
+  }
+  tbody td:nth-last-of-type(1) > a, tbody td:nth-last-of-type(3) > a {
+    margin: 0 3px;
+  }
+  &.grid-visible {
+    overflow: visible;
+  }
+}
+
+/* firefox */
+@-moz-document url-prefix() {
+  .table {
+    border-collapse: separate;
+    border-top: 2px solid #bce1d7;
+  }
+}
+
+%backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.m-loading {
+  background: url("../images/layout/loading.gif") no-repeat center rgba(0, 0, 0, 0.2);
+  background-size: 60px;
+  @extend %backdrop;
+}
+
+.m-backdrop {
+  @extend %backdrop;
+}
+
+.grid-over {
+  thead {
+    th {
+      white-space: nowrap;
+    }
+  }
+  tbody {
+    td {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 400px;
+    }
+  }
+}
+
+//分页
+.pagination-box {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+  &.ps {
+    position: static !important;
+  }
+}
+
+.pagination-nobd {
+  vertical-align: top;
+  & + .pagination-total {
+    margin-left: 18px;
+  }
+  li {
+    a {
+      border: none;
+      background-color: transparent;
+      padding: 4px 10px;
+      margin: 0 2px;
+      border-radius: 4px;
+      color: #000;
+      cursor: pointer;
+      &:hover {
+        background-color: #ddd;
+        border-color: #ddd;
+        color: #000;
+      }
+      &:focus {
+        color: #000;
+      }
+    }
+    &.active {
+      a {
+        color: #fff;
+        background-color: #53c2cd;
+        border-color: #53c2cd;
+        &:hover, &:focus {
+          color: #fff;
+          background-color: #53c2cd;
+          border-color: #53c2cd;
+        }
+      }
+    }
+    .page-pre, .page-next {
+      background: url("../images/icon_pagination.png") no-repeat;
+    }
+    .page-pre {
+      background-position: 0 0;
+      &:hover {
+        background-position: 0 -28px;
+      }
+    }
+    .page-next {
+      background-position: -30px 0;
+      &:hover {
+        background-position: -30px -28px;
+      }
+    }
+    &.disabled {
+      .page-pre {
+        background-position: 0 -56px;
+      }
+      .page-next {
+        background-position: -30px -56px;
+      }
+    }
+  }
+}
+
+.pagination-total {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0;
+  line-height: 1.66666em;
+  padding: 3px 0;
+  span {
+    padding: 0 4px;
+    color: $brand-primary;
+    font-weight: bold;
+  }
+}
+
+#scroll .pagination-total {
+  margin-right: 10px;
+}

@@ -38,18 +38,20 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')]
-      }, {
+      },
+      {
         // HTML LOADER
         // Reference: https://github.com/webpack/raw-loader
         // Allow loading html through js
         test: /\.html$/,
-        loader: 'raw-loader'
-      }, {
+        loader: 'html-loader'
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          name: utils.assetsPath('images/[name].[hash:7].[ext]')
         }
       },
       {

@@ -1,0 +1,15 @@
+// Links
+
+a {
+  color: $link-color;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration-none;
+    outline:none;
+  }
+  &:focus{
+    color:$link-color ;
+  }
+}

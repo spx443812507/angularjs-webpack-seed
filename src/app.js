@@ -3,13 +3,16 @@ import uiRouter from 'angular-ui-router'
 import ocLazyLoad from 'oclazyload'
 import 'angular-animate'
 import 'angular-aria'
-import 'angular-material'
+import 'angular-messages'
 
-import 'angular-material/angular-material.css'
+import routing from './app.routes'
+import directives from './directives'
+import config from './app.config'
 
-import routing from './app.config'
+import './css/article.css'
+import './css/style.css'
+import 'bootstrap/dist/css/bootstrap.css'
 
-import './app.css'
-
-angular.module('app', [uiRouter, ocLazyLoad, 'ngMaterial'])
+angular.module('app', [uiRouter, ocLazyLoad, 'ngMessages', directives])
   .config(routing)
+  .constant('config', config)

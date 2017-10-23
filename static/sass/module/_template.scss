@@ -1,0 +1,285 @@
+.m-temp-box{
+  width:100%;height:auto;margin-bottom:10px;position:relative;overflow:hidden;
+  >.m-temp-list + .m-temp-list{
+    margin-left: 20px;
+  }
+}
+.m-temp-title{
+  width:100%;height:auto;float:left;overflow:hidden;font-size:14px;color:$gray-base;line-height:30px;
+}
+.g-temp-temps{
+  width:100%;height:auto;float:left;margin-bottom:15px;border:1px solid $border-color;box-sizing: border-box;overflow:hidden;
+}
+.u-temp-temps-top{
+  width:100%;height:36px;float:left;padding:0 10px;box-sizing: border-box;background-color:#f2f2f2;font-size:14px;line-height:36px;
+}
+.g-temp-temps-con{
+  width:100%;height:auto;padding:10px 0px 0px 0px;box-sizing:border-box;overflow:hidden;
+  .m-temp-list{
+    margin:0 8px 10px 8px;
+  }
+}
+.u-temp-btn01{
+  float:left;margin:280px 0 0 20px;
+}
+.m-temp-list{
+  width:195px;height:310px;float:left;border:1px solid $border-color;box-sizing:border-box;
+  &:hover,&.hover{
+    background-color:#e5f6ff;border-color:lighten($brand-primary-light,5%);box-shadow:0 0 5px #76bde4;
+  }
+  &.active{
+    border:1px solid $brand-info;
+    &:hover{
+      box-shadow:0 0 5px $brand-info;
+    }
+    .u-temp-tit{
+      background-color:$brand-info;color:$gray-white;
+    }
+  }
+  .u-temp-tit{
+    width:100%;height:32px;padding:0 10px;box-sizing:border-box;background-color:$brand-primary-light;
+    font-size:14px;color:$gray-white;line-height:32px;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;
+  }
+  .u-temp-con{
+    width:175px;height:258px;margin:10px;box-sizing:border-box;overflow:hidden;
+    img{
+      width:100%;height:auto;
+    }
+  }
+}
+
+//CSS编辑模板的样式
+.g-temp-css{
+  width:100%;height:531px;overflow:hidden;
+}
+
+.m-temp-css-left{
+  width:195px;height:auto;float:left;position:relative;clear:left;margin:0 20px 0 0;z-index:5;
+  .m-temp-list{
+    margin-bottom:10px;
+    &.hover+.u-temp-css-san{
+      top:370px;
+    }
+  }
+}
+.u-temp-css-san{
+  width:15px;height:15px;position:absolute;top:60px;right:-28px;border:1px solid $border-color;border-right:0px;border-top:0px;background-color:#ffffff;
+  @include prefix(transform,rotate(45deg))
+}
+.m-temp-css-right{
+  width:843px;height:auto;float:left;position:relative;overflow:hidden;z-index:1;
+}
+//编辑模板的样式
+%rotate{
+  @include prefix(transform,rotate(45deg))
+}
+%weilei{
+  width:32px;height:32px;content: "";position:absolute;display:block;
+}
+.m-temp-nav{
+  width:100%;height:32px;padding:0 10px;margin:0 0 10px 0;float:left;box-sizing:border-box;
+  ul{
+    width:100%;height:32px;float:left;list-style-type: none;margin:0px;padding:0px;
+    li{
+      width:248px;height:32px;float:left;position:relative;margin:0 9px 0 0;background-color:#e8e8e8;font-size:14px;text-align: center;line-height:32px;
+      span:nth-of-type(1){
+        @extend %weilei;
+        overflow: hidden;left:0px;top:0px;
+        &::before{
+          @extend %weilei;
+          @extend %rotate;
+          background-color: #ffffff;left:-24px;top:0px;
+        }
+      }
+      span:nth-of-type(3){
+        @extend %weilei;
+        overflow: hidden;right:-20px;top:0px;
+        &::before{
+          @extend %weilei;
+          @extend %rotate;
+          background-color:#e8e8e8;right:10px;top:0px;
+        }
+      }
+    }
+    li.active{
+      background-color:$active;color:$white;
+      span:nth-of-type(3){
+        &::before{
+          background-color:$active;
+        }
+      }
+    }
+    li.visited{
+      background-color:$visited;color: $white;
+      span:nth-of-type(3){
+        &::before{
+          background-color:$visited;
+        }
+      }
+    }
+    li:nth-of-type(1){
+      z-index:4;
+    }
+    li:nth-of-type(2){
+      z-index:3;
+    }
+    li:nth-of-type(3){
+      z-index:2;
+    }
+    li:nth-of-type(4){
+      z-index:1;margin-right:0px;
+    }
+  }
+}
+.g-temp-list{
+  width:100%;height:auto;float:left;padding:0 10px;box-sizing:border-box;overflow:hidden;
+}
+.g-temp-iphone{
+  width:250px;height:405px;float:left;margin:0 20px 10px 0;border:1px solid $border-color;
+}
+.g-temp-edit{
+  width:765px;height:auto;min-height:415px;float:left;position:relative;padding:0 0 40px 0;box-sizing:border-box;overflow:hidden;
+}
+.g-temp-btns{
+  width:100%;height:auto;position:absolute;left:0px;bottom:10px;overflow:hidden;
+  button{
+    float:left;
+  }
+  a{
+    display:block;float:left;margin:13px 0 0 10px;font-size:12px;text-decoration:underline;
+  }
+}
+.g-temp-colors{
+  width:100%;height:26px;float:left;margin:327px 0 20px 0;
+  input[type=radio]{
+    display: none;
+  }
+  label{
+    width:26px;height:26px;float:left;display:block;margin:0 20px 0 0;border:4px solid #333;border-radius:26px;cursor:pointer;box-sizing: border-box;
+  }
+  input[type=radio]:checked + label {
+    border-width:13px;
+  }
+  .u-temp01-purple{  border-color:#c882a6; }
+  .u-temp01-yellow{  border-color:#fdd621; }
+  .u-temp01-red{  border-color:#f89380; }
+  .u-temp01-brown{  border-color:#b7cb73; }
+  .u-temp01-green{  border-color:#44b460; }
+}
+.g-temp-iphone-tit{
+  width:100%;height:32px;float:left;padding:0 10px;box-sizing:border-box;background-color:$brand-primary-light;
+  font-size:14px;text-align:center;line-height:32px;color:$gray-white;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.g-temp-iphone-con{
+  width:100%;height:370px;padding:5px;float:left;box-sizing:border-box;overflow:hidden;
+  img{
+    width:100%;height:auto;
+  }
+}
+.g-iphone-top{
+  width:100%;height:50px;float:left;overflow:hidden;background:url("../images/template/temp-iphone01.jpg") repeat-x;
+}
+.u-iphone-tit{
+  width:70px;height:50px;float:left;
+  font-size:14px;color:$gray-darker;line-height:50px;text-align:center;
+}
+.u-iphone-kv{
+  width:168px;height:50px;float:left;overflow:hidden;
+  img{
+    width:100%;height:auto;min-height:100%;
+  }
+}
+.g-iphone-main{
+  width:100%;height:auto;float:left;margin:7px 0 0 0;overflow:hidden;list-style-type: none;margin:0px;padding:0px;
+  li{
+    width:100%;height:36px;float:left;padding:0 10px;box-sizing:border-box;border-bottom:1px solid $border-color;line-height:36px;
+    .u-iphone-text{
+      width:145px;float:left;font-size:12px;color:$gray-darker;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    }
+    .u-iphone-time{
+      width:70px;float:right;font-size:10px;color:#999999;
+    }
+  }
+  li.active{
+    background-color:#d72533;
+    .u-iphone-text{
+      color:#ffffff;
+    }
+    .u-iphone-time{
+      color:#ffffff;
+    }
+  }
+}
+
+//设置logo跟编辑细节的样式
+.g-temp-detail{
+  width:100%;height:auto;float:left;margin:28px 0 0 0;overflow:hidden;
+}
+.u-temp-detail-tit{
+  width:100%;height:30px;float:left;
+  font-size:14px;color:$gray-darker;line-height:30px;
+}
+.u-temp-detail-txt{
+  width:100%;height:20px;float:left;
+  font-size:12px;color:$gray;line-height:20px;
+}
+.g-temp-detail-btn{
+  width:100%;height:70px;float:left;
+  input[type="radio"]{
+    display:none;
+  }
+}
+.u-temp-detail-radio{
+  width:100%;margin:10px 0 0 0;
+}
+.f-temp-detail-files{
+  width:100%;height:auto;float:left;position:relative;margin:10px 0 0 0;overflow:hidden;
+}
+.m-temp-detail-file{
+  width:380px;height:auto;float:left;position:absolute;bottom:0px;margin:0 0 0 15px;overflow:hidden;
+  .m-temp-detail-file-text{
+    width:100%;height:auto;margin:5px 0 0 0;font-size:12px;color:$gray;overflow:hidden;
+  }
+}
+.u-temp-logos-logo{
+  width:158px;min-height:70px;max-height:158px;float:left;border:1px solid $border-color;overflow:hidden;
+  img{
+    width:100%;height:auto;
+  }
+  + .m-temp-detail-file{
+    left:158px;
+  }
+}
+.u-temp-kvs-kv{
+  width:384px;height:auto;min-height:70px;max-height:200px;float:left;border:1px solid $border-color;box-sizing:border-box;
+  img{
+    width:100%;height:auto;
+  }
+  + .m-temp-detail-file{
+    left:384px;
+  }
+}
+
+.f-temp-css{
+  width:100%;height:auto;
+  a{
+    color:$gray-darker;
+  }
+}
+.g-temp-manys{
+  width:100%;height:auto;float:left;overflow:hidden;
+  .m-temp-list{
+    margin:0 20px 0 0;
+  }
+}
+.u-temp-btn02{
+  float:left;margin:20px 0 0 0px;
+}
+
+/* 上传控件 */
+  .btn-file{
+    position:relative;margin-right:5px;height:27px;line-height: 17px;
+    input[type='file']{
+      position:absolute;left:0;top:0; opacity:0;width:100%;height:100%;
+    }
+  }

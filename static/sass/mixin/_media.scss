@@ -1,0 +1,22 @@
+$breakpoints:(
+  small:1366px,
+  middle:1440px,
+  large:1920px
+);
+
+@mixin screen($screen-breakpoints,$screen-size){
+  $breakpoint:0 ;  //default
+    @if map-has-key($screen-breakpoints, $screen-size) {
+      $breakpoint: map-get($screen-breakpoints, $screen-size);
+      @media screen and (min-width:  $breakpoint) {
+        @content;
+      }
+    }
+}
+
+
+//@include screen($breakpoints,middle){
+//  background-position: center center;
+//}
+
+

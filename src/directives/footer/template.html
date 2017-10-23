@@ -1,0 +1,129 @@
+<footer class="g-footer" id="g-footer">
+  <style type="text/css">
+    .g-footer {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: #666666;
+      font-family: '微软雅黑';
+    }
+
+    .g-footer p {
+      padding: 20px 0;
+      margin-bottom: 0;
+    }
+
+    .border-top {
+      border-top: 1px solid #bbb;
+    }
+
+    .g-footer span + span {
+      margin-left: 25px;
+      line-height: 55px;
+    }
+
+    .fontitalic {
+      font-style: italic;
+    }
+
+    .g-footer a {
+      color: #666666;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .g-footer a:hover {
+      color: #666;
+      text-decoration: none;
+    }
+
+    .icon-b-feedback, .icon-b-telphone {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+
+    .icon-b-feedback {
+      background: url("//cdn.smarket.net.cn/footer/b-feedback.png") no-repeat;
+    }
+
+    .icon-b-telphone {
+      background: url("//cdn.smarket.net.cn/footer/b-telphone.png") no-repeat;
+    }
+
+    .font-white, .font-white a, .font-white a:hover {
+      color: #fff;
+    }
+
+    .font-white .icon-b-feedback {
+      background: url("//cdn.smarket.net.cn/footer/b-feedback-w.png") no-repeat;
+    }
+
+    .font-white .icon-b-telphone {
+      background: url("//cdn.smarket.net.cn/footer/b-telphone-w.png") no-repeat;
+    }
+  </style>
+  <span class="fontitalic">powered by SINObase</span>
+  <span>
+        <a ng-href="{{feedbackUrl}}" target="_blank"><i class="icon-b-feedback"></i>意见反馈</a>
+  </span>
+  <span><i class="icon-b-telphone"></i>400-0979-006</span>
+  <script type="text/javascript">
+    'use strict'
+    var hostModule = window.location.hostname
+    var configs = window.config
+    var hostKey = ''
+
+    for (var item in configs) {
+      if (configs.hasOwnProperty(item) && typeof configs[item] === 'string') {
+        if (configs[item].indexOf(hostModule) > -1) {
+          hostKey = item
+          break
+        }
+      }
+    }
+    switch (hostKey) {
+      case 'coreUrl':
+        break
+      case 'indexUrl':
+        break
+      case 'seminarUrl':
+        break
+      case 'toolsUrl':
+        $('#g-footer').addClass('border-top')
+        if (window.location.href.indexOf('luckydraw') > -1) {
+          $('#g-footer').addClass('font-white')
+        }
+        break
+      case 'webinarUrl':
+        break
+      case 'webinarOpenUrl':
+        break
+      case 'webinarInteractUrl':
+        break
+      case 'weChatUrl':
+        break
+      case 'tenantUrl':
+        break
+      case 'adminUrl':
+        break
+      case 'systoolUrl':
+        break
+      case 'topicUrl':
+        break
+      case 'reportUrl':
+        break
+      case 'dictUrl':
+        break
+      case 'articleUrl':
+        break
+      case 'productUrl':
+        $('#g-footer').addClass('border-top')
+        break
+      default:
+        break
+    }
+  </script>
+</footer>
