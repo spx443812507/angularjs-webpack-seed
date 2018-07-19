@@ -1,484 +1,436 @@
-<div class="m-page-tools">
-  <header class="m-header-tools">
-    <div class="m-title">
-      <a>
-        <h1>抽奖</h1>
-      </a>
-      <a class="tenant" href="javascript:;">返回租户首页</a>
-    </div>
-    <div class="m-tools-nav">
-      <div class="m-toos-user">
-        <a uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="true">
-          <span>陈志勇-赛诺贝斯（北京）营销股份有限公司</span>
-          <i class="glyphicon glyphicon-menu-hamburger"></i>
-        </a>
-        <ul uib-dropdown-menu="" class="animated fadeInRight m-t-xs ng-scope dropdown-menu"
-            ng-controller="translateCtrl">
-          <li><a>English</a></li>
-          <li><a>Spanish</a></li>
-        </ul>
+<div class="m-tools-main m-tool-view">
+  <div class="g-main-form clearfix">
+    <div class="g-form-left">
+      <div class="g-dropdown-list u-w174 u-mr10">
+        <div class="dropdown dropdown-container">
+          <button class="dropdown-single dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span class="dropdown-single-span">选择抽奖类型</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li>活动报名</li>
+            <li>意见反馈</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
-
-  <div class="m-nav-crumbs">
-    <div class="m-nav-left">
-      <h2 data-toggle="modal" data-target="#myModal">抽奖列表</h2>
-      <nav>
-        <a>科睿唯安 </a>
-        <a>2018销售大会（线上会） </a>
-        <a>抽奖列表 </a>
-      </nav>
-    </div>
-    <div class="m-upimage-right m-nav-right">
-      <button type="button" class="m-btn-green u-w80 u-mt10">共享抽奖</button>
-    </div>
-  </div>
-
-  <!-- 模块内容 -->
-  <div class="m-tools-page">
-    <div class="m-tools-main m-tool-view">
-      <div class="g-main-form clearfix">
-        <div class="g-form-left">
-          <div class="g-dropdown-list u-w174 u-mr10">
-            <div class="dropdown dropdown-container">
-              <button class="dropdown-single dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <span class="dropdown-single-span">选择抽奖类型</span>
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li>活动报名</li>
-                <li>意见反馈</li>
-              </ul>
-            </div>
-          </div>
-          <div class="g-search u-w262">
-            <div class="input-group">
-              <input type="text" class="form-control">
-              <span class="input-group-btn">
+      <div class="g-search u-w262">
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
                             <button type="button" class="btn btn-primary">搜索</button>
                         </span>
-            </div>
-          </div>
-        </div>
-        <div class="g-form-right">
-          <button type="button" class="btn btn-primary u-w90 pull-right">奖品管理</button>
-          <button type="button" class="btn btn-primary u-w90 u-mr10 pull-right" data-toggle="modal"
-                  data-target="#createProductline">
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新建抽奖
-          </button>
-        </div>
-      </div>
-      <div class="g-main-list">
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon dazhuanpan"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>88888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>50000</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status nostart">未开始</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon guaguaka"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>500</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status process">进行中</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon zajindan"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>500</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status end">已结束</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon yaoyiyao"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>500</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status nostart">未开始</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon daping"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>500</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status nostart">未开始</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon yaohongbao"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>500</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status nostart">未开始</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon dazhuanpan"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>500</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status nostart">未开始</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon dazhuanpan"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>500</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status nostart">未开始</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-        <div class="g-card-items">
-          <div class="items-info">
-            <div class="g-card-top">
-              <div class="m-card-icon dazhuanpan"></div>
-              <div class="right">
-                <div class="g-data-text">
-                  <strong>888</strong>
-                  <span>参与</span>
-                </div>
-                <div class="g-data-text">
-                  <strong>500</strong>
-                  <span>中奖</span>
-                </div>
-              </div>
-            </div>
-            <div class="g-card-bottom">
-              <div class="g-bot-text">
-                <div class="top">
-                  <img src="../../../assets/images/title.png">
-                  <span class="text-info">幸运大转盘</span>
-                </div>
-                <div class="top">
-                  <img src="../../../assets/images/time.png">
-                  <span class="text-info">预计2018-06-30 12:10日开始</span>
-                </div>
-              </div>
-              <div class="g-luck-status nostart">未开始</div>
-            </div>
-          </div>
-          <div class="m-opera">
-            <div class="items-icons">
-              <a href="javascript:;" class="m-opera-icons edit"></a>
-              <a href="javascript:;" class="m-opera-icons qrcode"></a>
-              <a href="javascript:;" class="m-opera-icons statis"></a>
-              <a href="javascript:;" class="m-opera-icons shared"></a>
-              <a href="javascript:;" class="m-opera-icons start"></a>
-              <a href="javascript:;" class="m-opera-icons copy"></a>
-              <a href="javascript:;" class="m-opera-icons del"></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="m-main-pager">
-        <div class="m-pagings">
-          <ul class="m-paging-right">
-            <li class="disabled">«</li>
-            <li>‹</li>
-            <li class="active">1</li>
-            <li>13</li>
-            <li>...</li>
-            <li>345</li>
-            <li>789</li>
-            <li>›</li>
-            <li>»</li>
-          </ul>
-          <div class="m-paging-left">
-            <div class="txt">每页</div>
-            <div class="select">
-              <div class="dropup dropdown-container">
-                <button class="dropdown-single dropdown-toggle" data-toggle="dropdown"
-                        aria-expanded="false">
-                  <span class="dropdown-single-span">20</span>
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>40</li>
-                  <li>60</li>
-                </ul>
-              </div>
-            </div>
-            <div class="txt">共41条数据</div>
-          </div>
-
         </div>
       </div>
     </div>
+    <div class="g-form-right">
+      <button type="button" class="btn btn-primary u-w90 pull-right">奖品管理</button>
+      <button type="button" class="btn btn-primary u-w90 u-mr10 pull-right" data-toggle="modal"
+              data-target="#createProductline">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新建抽奖
+      </button>
+    </div>
   </div>
-  <footer class="m-tools-footer" data-toggle="modal" data-target="#myModal">
-    <span>Copyright  SINObase  Ⓒ 2014-2018</span>
-    <span>400-0979-006</span>
-  </footer>
-  <!-- 模块内容 -->
+  <div class="g-main-list">
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon dazhuanpan"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>88888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>50000</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status nostart">未开始</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon guaguaka"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>500</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status process">进行中</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon zajindan"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>500</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status end">已结束</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon yaoyiyao"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>500</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status nostart">未开始</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon daping"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>500</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status nostart">未开始</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon yaohongbao"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>500</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status nostart">未开始</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon dazhuanpan"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>500</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status nostart">未开始</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon dazhuanpan"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>500</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status nostart">未开始</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+    <div class="g-card-items">
+      <div class="items-info">
+        <div class="g-card-top">
+          <div class="m-card-icon dazhuanpan"></div>
+          <div class="right">
+            <div class="g-data-text">
+              <strong>888</strong>
+              <span>参与</span>
+            </div>
+            <div class="g-data-text">
+              <strong>500</strong>
+              <span>中奖</span>
+            </div>
+          </div>
+        </div>
+        <div class="g-card-bottom">
+          <div class="g-bot-text">
+            <div class="top">
+              <img src="../../../assets/images/title.png">
+              <span class="text-info">幸运大转盘</span>
+            </div>
+            <div class="top">
+              <img src="../../../assets/images/time.png">
+              <span class="text-info">预计2018-06-30 12:10日开始</span>
+            </div>
+          </div>
+          <div class="g-luck-status nostart">未开始</div>
+        </div>
+      </div>
+      <div class="m-opera">
+        <div class="items-icons">
+          <a href="javascript:;" class="m-opera-icons edit"></a>
+          <a href="javascript:;" class="m-opera-icons qrcode"></a>
+          <a href="javascript:;" class="m-opera-icons statis"></a>
+          <a href="javascript:;" class="m-opera-icons shared"></a>
+          <a href="javascript:;" class="m-opera-icons start"></a>
+          <a href="javascript:;" class="m-opera-icons copy"></a>
+          <a href="javascript:;" class="m-opera-icons del"></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="m-main-pager">
+    <div class="m-pagings">
+      <ul class="m-paging-right">
+        <li class="disabled">«</li>
+        <li>‹</li>
+        <li class="active">1</li>
+        <li>13</li>
+        <li>...</li>
+        <li>345</li>
+        <li>789</li>
+        <li>›</li>
+        <li>»</li>
+      </ul>
+      <div class="m-paging-left">
+        <div class="txt">每页</div>
+        <div class="select">
+          <div class="dropup dropdown-container">
+            <button class="dropdown-single dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <span class="dropdown-single-span">20</span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>40</li>
+              <li>60</li>
+            </ul>
+          </div>
+        </div>
+        <div class="txt">共41条数据</div>
+      </div>
+    </div>
+  </div>
 </div>

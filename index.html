@@ -12,23 +12,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="//cdn.smarket.net.cn/images/logo.ico" type="image/x-icon"/>
-  <title ng-bind="rootTitle">文章管理</title>
+  <title ng-bind="rootTitle">抽奖管理</title>
 </head>
 <body>
-<navigator></navigator>
-<div class="g-container-box">
-  <div class="bump-top"></div>
-  <div class="m-container">
-    <section class="g-content">
-      <div class="containers">
-        <ui-view></ui-view>
+<div class="m-page-tools">
+  <header class="m-header-tools">
+    <div class="m-title">
+      <a>
+        <h1>抽奖</h1>
+      </a>
+      <a class="tenant" href="javascript:;">返回租户首页</a>
+    </div>
+    <div class="m-tools-nav">
+      <div class="m-toos-user">
+        <a uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="true">
+          <span>陈志勇-赛诺贝斯（北京）营销股份有限公司</span>
+          <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </a>
+        <ul uib-dropdown-menu="" class="animated fadeInRight m-t-xs ng-scope dropdown-menu">
+          <li><a>English</a></li>
+          <li><a>Spanish</a></li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </header>
+
+  <div class="m-nav-crumbs">
+    <div class="m-nav-left">
+      <h2 data-toggle="modal" data-target="#myModal">抽奖列表</h2>
+      <nav>
+        <a>科睿唯安 </a>
+        <a>2018销售大会（线上会） </a>
+        <a>抽奖列表 </a>
+      </nav>
+    </div>
+    <div class="m-upimage-right m-nav-right">
+      <button type="button" class="m-btn-green u-w80 u-mt10">共享抽奖</button>
+    </div>
   </div>
-  <div class="bump-bottom"></div>
-</div>
-<div class="g-wrap">
-  <s-footer></s-footer>
+
+  <!-- 模块内容 -->
+  <div class="m-tools-page">
+    <ui-view></ui-view>
+  </div>
+  <footer class="m-tools-footer" data-toggle="modal" data-target="#myModal">
+    <span>Copyright  SINObase  Ⓒ 2014-2018</span>
+    <span>400-0979-006</span>
+  </footer>
+  <!-- 模块内容 -->
 </div>
 </body>
 </html>

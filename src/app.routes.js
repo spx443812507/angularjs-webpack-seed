@@ -2,9 +2,9 @@ routing.$inject = ['$urlRouterProvider', '$locationProvider', '$stateProvider']
 
 export default function routing ($urlRouterProvider, $locationProvider, $stateProvider) {
   $locationProvider.html5Mode(false)
-  $urlRouterProvider.otherwise('/article/list')
+  $urlRouterProvider.otherwise('/')
 
-  $stateProvider.state('article.list', {
+  $stateProvider.state('articleList', {
     url: '/article/list',
     template: require('./modules/article/list/index.html'),
     controller: 'ArticleListController',
@@ -15,7 +15,7 @@ export default function routing ($urlRouterProvider, $locationProvider, $statePr
     }
   })
 
-  $stateProvider.state('article.detail', {
+  $stateProvider.state('articleDetail', {
     url: '/article/detail',
     template: require('./modules/article/detail/index.html'),
     controller: 'ArticleDetailController',
