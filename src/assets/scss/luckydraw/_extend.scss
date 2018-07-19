@@ -1,0 +1,19 @@
+%clearfix{
+  &:after{
+    width:100%;
+    height:0;
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+%disflex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%nowarp{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

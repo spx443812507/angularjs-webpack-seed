@@ -1,0 +1,40 @@
+$arr_width:20 65 70 80 85 90 110 124 130 140 150 160 174 200 262 372 430 480 530 580 650 800;
+@for $i from 1 through length($arr_width) {
+  .u-w#{nth($arr_width,$i)}{
+    width: nth($arr_width,$i) + px !important;
+  }
+}
+
+$arr_mt:4 5 10 15 25 50 60;
+@for $i from 1 through length($arr_mt) {
+  .u-mt#{nth($arr_mt,$i)}{
+    margin-top: nth($arr_mt,$i) + px;
+  }
+}
+
+$arr_mr:5 8 10 15 20 25 30 35 40 45 50;
+@for $i from 1 through length($arr_mr) {
+  .u-mr#{nth($arr_mr,$i)}{
+    margin-right: nth($arr_mr,$i) + px;
+  }
+}
+
+$arr_ml:5 10 15 20 25 30 35 40 45 50;
+@for $i from 1 through length($arr_ml) {
+  .u-ml#{nth($arr_ml,$i)}{
+    margin-left: nth($arr_ml,$i) + px;
+  }
+}
+
+$arr_pl:20 30;
+@for $i from 1 through length($arr_pl){
+  .u-pl#{nth($arr_pl,$i)}{
+    padding-left: nth($arr_pl,$i) + px;
+  }
+}
+$arr_pr:(65);
+@for $i from 1 through length($arr_pr){
+  .u-pr#{nth($arr_pr,$i)}{
+    padding-right: nth($arr_pr,$i) + px !important;
+  }
+}

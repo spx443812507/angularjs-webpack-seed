@@ -1,0 +1,184 @@
+.m-nav-left{
+  float:left;
+  width:70%;
+}
+.m-nav-right{
+  float:right;
+}
+.m-tools-page {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.m-tools-main{
+  width:990px;
+  padding-top: 60px;
+  margin:0 auto;
+  @extend %clearfix;
+}
+.g-main-list{
+  width: 100%;
+  height: auto;
+  @extend %clearfix;
+}
+.g-card-items{
+  position: relative;
+  float: left;
+  width:320px;
+  height:190px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: $white;
+  overflow: hidden;
+  .g-items-text{
+    position: absolute;
+    right:10px;
+    top:10px;
+    font-size: 12px;
+    color:$font03;
+    line-height: 14px;
+  }
+  .items-info{
+    float: left;
+    width: 100%;height:100%;
+    border: 1px solid $bor04;
+    box-sizing: border-box;
+  }
+  &:hover{
+    .m-opera{
+      top:0;
+    }
+  }
+}
+.g-card-top{
+  width:100%;
+  height:128px;
+  .right{
+    float:left;
+    width:220px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 28px;
+    .g-data-text{
+      float:left;
+      width:50%;
+      text-align: center;
+      strong{
+        display: block;
+        padding-top: 5px;
+        font-size: 30px;color:$font01;
+        line-height: 40px;
+        font-weight: 400;
+      }
+      span{
+        font-size: 14px;color:$font03;
+        line-height: 16px;
+      }
+    }
+  }
+}
+.g-card-bottom{
+  width:100%;
+  height:62px;
+  padding:8px 10px 0 10px;
+  border-top: 1px solid $bor04;
+}
+.g-bot-text{
+  float: left;
+  width:240px;
+  height:100%;
+  overflow: hidden;
+  .top{
+    width:100%;
+    margin-bottom: 5px;
+    @extend %nowarp;
+    img{
+      display: block;
+      float: left;
+      width:12px;height:12px;
+      margin-top: 4px;
+    }
+    .text-info{
+      margin-left:5px;
+      font-size: 12px;color:$font02;
+      line-height: 14px;
+    }
+  }
+}
+.g-luck-status{
+  float:right;
+  padding:3px 8px;
+  margin-top:10px;
+  font-size: 12px;
+  color:$white;
+  border-radius: 10px;
+  &.nostart{
+    background-color: $bor13;
+  }
+  &.process{
+    background-color: $green;
+  }
+  &.end{
+    background-color: $font03;
+  }
+}
+.m-opera{
+  position: absolute;
+  top:-100%;left:0;
+  @extend %disflex;
+  width:100%;height:100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  @include prefix(transition,0.5s);
+  .items-icons{
+    width:100%;
+    height: auto;
+    font-size: 0;
+    padding:0 20px;
+    &.center{
+      text-align: center;
+    }
+  }
+}
+.m-opera-icons{
+  display: inline-block;
+  width:50px;height:50px;
+  margin:10px;
+  border-radius: 50%;
+  background-color: $bg01;
+  background-image: url("../images/opera-icons.png");
+  background-repeat: no-repeat;
+  &:hover{
+    background-color: $green;
+  }
+  $arr-icon: (edit,qrcode,statis,shared,start,copy,del);
+  @each $attr in $arr-icon{
+    &.#{$attr}{
+      background-position: 0 (-(index($arr-icon,$attr)-1)*50 + px);
+    }
+  }
+}
+.m-card-icon{
+  float:left;
+  width:75px;height:75px;
+  margin-left:20px;
+  margin-top:28px;
+  border-radius: 50%;
+  background-image: url("../images/luck-icon.png");
+  background-repeat: no-repeat;
+  $arr-icons: (
+    (name:dazhuanpan,color:$bg06),
+    (name:guaguaka,color:$bg08),
+    (name:zajindan,color:$bg09),
+    (name:yaoyiyao,color:$bg10),
+    (name:daping,color:$bg11),
+    (name:yaohongbao,color:$green)
+  );
+  @for $i from 1 through length($arr-icons){
+    $item: nth($arr-icons, $i);
+    &.#{map-get($item, name)}{
+      background-position: 0 (-($i - 1)*75 + px);
+      background-color: map-get($item, color);
+    }
+  }
+}

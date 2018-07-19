@@ -1,0 +1,147 @@
+.m-main-content {
+  background-color: $white;
+}
+
+.m-header {
+  padding: 20px 20px 15px 20px;
+  width: 100%;
+  height: auto;
+  border-top: 5px solid $bor14;
+  @extend %clearfix;
+}
+
+.g-header-left {
+  float: left;
+  width: 400px;
+  overflow: hidden;
+  .title {
+    width: 100%;
+    font-size: 18px;
+    color: $font02;
+    line-height: 24px;
+    margin-bottom: 10px;
+    @extend %nowarp;
+  }
+  .text {
+    width:100%;
+    font-size: 12px;
+    color: $font03;
+    line-height: 14px;
+    @extend %nowarp;
+  }
+}
+
+.g-header-right {
+  float: right;
+  width:180px;height:auto;
+  a{
+    float:right;
+    font-size: 12px;
+    color:$gray11;
+    line-height: 14px;
+    text-decoration: underline;
+    white-space: nowrap;
+    &:hover,&:link{
+      text-decoration: underline;
+    }
+  }
+}
+
+.g-code {
+  float:right;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 5px;
+  img{
+    display: block;
+    width:100%;height:100%;
+  }
+}
+.m-main-info{
+  padding:15px 20px 30px 20px;
+  width:100%;
+  height:auto;
+  border-top:1px solid $gray13;
+  .g-info-text{
+    width:100%;
+    font-size: 12px;color:$gray11;
+    line-height: 14px;
+    margin-bottom: 15px;
+  }
+}
+.g-link{
+  width:100%;
+  margin-bottom:15px;
+  overflow: hidden;
+  a{
+    float:left;
+    margin-right:20px;
+    font-size: 12px;color:$green;
+    line-height: 14px;
+    border-bottom:1px solid $green;
+  }
+}
+.m-statis-tab{
+  width:100%;
+  height:40px;
+  border-bottom: 1px solid $bor05;
+  box-sizing: border-box;
+}
+.g-tab-name{
+  float:left;
+  padding-left:20px;
+  padding-right:20px;
+  height:40px;
+  font-size: 14px;color:$font05;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  &:hover{
+    cursor: pointer;
+  }
+  &.active{
+    color:$font06;
+    font-weight: 600;
+    border-radius: 3px 3px 0 0;
+    border:1px solid $bor05;
+    border-bottom-color: $bor06;
+  }
+}
+.g-statis-table{
+  width:100%;
+  table{
+    min-width: 100%;
+  }
+  thead{
+    tr{
+      height:46px;
+      th{
+        font-size: 12px;
+        color:$font02;
+        line-height: 46px;
+      }
+    }
+  }
+  tbody{
+    tr{
+      &:nth-of-type(2n){
+        background-color: $bg03;
+      }
+    }
+    td{
+      height:40px;
+      border-top: 1px solid $bor02;
+      .name{
+        max-width: 450px;
+        @extend %nowarp;
+      }
+    }
+  }
+  th,td{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  th{
+    @extend %nowarp;
+  }
+}

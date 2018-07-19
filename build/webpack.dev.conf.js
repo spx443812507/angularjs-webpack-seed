@@ -34,6 +34,6 @@ module.exports = merge(baseWebpackConfig, {
     new FriendlyErrorsPlugin(),
     new ExtractTextPlugin({
       filename: utils.assetsPath('css/[name].[contenthash].css')
-    }),
+    })
   ]
 })

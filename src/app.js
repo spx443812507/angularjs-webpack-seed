@@ -9,9 +9,7 @@ import routing from './app.routes'
 import directives from './directives'
 import config from './app.config'
 
-import './css/article.css'
-import './css/style.css'
-import 'bootstrap/dist/css/bootstrap.css'
+import './assets/scss/index.scss'
 
 angular.module('app', [uiRouter, ocLazyLoad, 'ngMessages', directives])
   .config(routing)
