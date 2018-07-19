@@ -4,7 +4,7 @@ export default function routing ($urlRouterProvider, $locationProvider, $statePr
   $locationProvider.html5Mode(false)
   $urlRouterProvider.otherwise('/')
 
-  $stateProvider.state('article', {
+  $stateProvider.state('articleList', {
     url: '/article/list',
     template: require('./modules/article/list/list.html'),
     controller: 'ArticleListController',
@@ -12,6 +12,17 @@ export default function routing ($urlRouterProvider, $locationProvider, $statePr
     lazyLoad: function (transition) {
       const $ocLazyLoad = transition.injector().get('$ocLazyLoad')
       return import('./modules/article/list').then(mod => $ocLazyLoad.load(mod.ARTICLE_LIST_MODULE))
+    }
+  })
+
+  $stateProvider.state('articleDetail', {
+    url: '/article/detail',
+    template: require('./modules/article/detail/detail.html'),
+    controller: 'ArticleDetailController',
+    controllerAs: 'ctrl',
+    lazyLoad: function (transition) {
+      const $ocLazyLoad = transition.injector().get('$ocLazyLoad')
+      return import('./modules/article/detail').then(mod => $ocLazyLoad.load(mod.ARTICLE_DETAIL_MODULE))
     }
   })
 }
